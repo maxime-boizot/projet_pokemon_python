@@ -8,6 +8,9 @@ class Equipe:
         pokemon_names = [str(pokemon) for pokemon in self._POKEMONS]
         return f"Mon équipe est composée de : \n{' '.join(pokemon_names)}"
     
+    def get_equipe(self):
+        return self._POKEMONS
+    
     def changepokemon(self, pokemons):
         if pokemons in self._POKEMONS:
             index = self._POKEMONS.index(pokemons)
