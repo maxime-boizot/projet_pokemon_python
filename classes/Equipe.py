@@ -18,9 +18,9 @@ class Equipe:
 
 
 if __name__ == "__main__":
-    Dracofoutre = Pokemon("Dracofoutre", 100, 10, 5, 10)
-    Tiplouf = Pokemon("Tiplouf", 100, 10, 5, 10)
-    Pikachu = Pokemon("Pikachu", 100, 10, 5, 10)
+    Dracofoutre = Pokemon("Dracofoutre", 100, 20, 2, 5)
+    Tiplouf = Pokemon("Tiplouf", 50, 8, 8, 20)
+    Pikachu = Pokemon("Pikachu", 35, 12, 10, 25)
     monekip = Equipe([Dracofoutre, Tiplouf, Pikachu])
     print(monekip)
 
