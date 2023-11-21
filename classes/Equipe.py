@@ -5,7 +5,8 @@ class Equipe:
         self._POKEMONS = pokemons
 
     def __str__(self):
-        return f"Mon équipe est composé de {self._POKEMONS}"
+        pokemon_names = [str(pokemon) for pokemon in self._POKEMONS]
+        return f"Mon équipe est composée de : \n{' '.join(pokemon_names)}"
     
     def changepokemon(self, pokemons):
         if pokemons in self._POKEMONS:

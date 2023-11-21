@@ -5,11 +5,9 @@ class Pokemon(Entite):
         super().__init__(name, maxhealth, strength, defense, speed)
 
     def __str__(self):
-        return f"""{self._NOM}: 
-    {self._HP}/{self._MAXHP} HP
-    {self._ATK} ATK
-    {self._DEF} DEF
-    {self._VIT} VIT"""
+        return f"""
+    {self._NOM}: {self._HP}/{self._MAXHP} HP | {self._ATK} ATK | {self._DEF} DEF | {self._VIT} VIT
+    """
 
     def __repr__(self):
         return self.__str__()
@@ -22,5 +20,4 @@ class Pokemon(Entite):
 
 if __name__ == "__main__":
     Dracofoutre = Pokemon("Dracofoutre", 100, 10, 5, 10)
-            
-
+    print(Dracofoutre)
