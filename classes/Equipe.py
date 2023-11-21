@@ -23,5 +23,11 @@ if __name__ == "__main__":
     Pikachu = Pokemon("Pikachu", 100, 10, 5, 10)
     monekip = Equipe([Dracofoutre, Tiplouf, Pikachu])
     print(monekip)
+
+    print('-----------------------------------------')
+
+    monekip.changepokemon(Pikachu)
+
+    print(monekip)
         
     pass
