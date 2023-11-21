@@ -11,7 +11,7 @@ Le projet de combat Pokémon est un jeu textuel où les joueurs peuvent choisir 
 - Le joueur peut choisir son Pokémon parmi une liste d’options disponibles.
 - Chaque Pokémon possède son propre ensemble de mouvements et de statistiques.
 - Les joueurs choisissent à tour de rôle des mouvements et attaquent leur adversaire.
-- La bataille se poursuit jusqu’à ce que le Pokémon d’un joueur s’évanouisse.
+- La bataille se poursuit jusqu’à ce qu'au moins un Pokémon d’un joueur soit en vie.
 
 ## Installation
 
