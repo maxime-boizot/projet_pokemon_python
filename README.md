@@ -1,31 +1,31 @@
-# Pokémon Battle Project
+# Projet Pokémon Battle
 
-This project aims to create a Pokémon battle game using Python.
+Ce projet vise à créer un jeu de combat Pokémon en utilisant Python.
 
 ## Description
 
-The Pokémon battle project is a text-based game where players can choose their Pokémon and engage in battles against other trainers. The game will simulate the turn-based battles seen in the Pokémon video games.
+Le projet de combat Pokémon est un jeu textuel où les joueurs peuvent choisir leurs Pokémon et s’engager dans des batailles contre d’autres entraîneurs. Le jeu simulera les batailles au tour par tour vues dans les jeux vidéo Pokémon.
 
-## Features
+## Caractéristiques
 
-- Player can choose their Pokémon from a list of available options.
-- Each Pokémon has its own set of moves and stats.
-- Players take turns selecting moves and attacking their opponent.
-- The battle continues until one player's Pokémon faints.
+- Le joueur peut choisir son Pokémon parmi une liste d’options disponibles.
+- Chaque Pokémon possède son propre ensemble de mouvements et de statistiques.
+- Les joueurs choisissent à tour de rôle des mouvements et attaquent leur adversaire.
+- La bataille se poursuit jusqu’à ce que le Pokémon d’un joueur s’évanouisse.
 
 ## Installation
 
-To install and run the Pokémon Battle Project, follow these steps:
+Pour installer et exécuter le projet Pokémon Battle, procédez comme suit :
 
-1. Clone the repository to your local machine.
-2. Navigate to the project directory.
-3. Install the required dependencies by running the following command:
+1. Clonez le dépôt sur votre ordinateur local.
+2. Accédez au répertoire du projet.
+3. Installez les dépendances requises en exécutant la commande suivante :
     ```bash
     pip install -r requirements.txt
     ```
-4. Run the game by executing the following command:
+4. Exécutez le jeu en exécutant la commande suivante :
     ```bash
     python main.py
     ```
 
-Make sure you have Python and pip installed on your machine before running the game.
+Assurez-vous que Python et pip sont installés sur votre machine avant d’exécuter le jeu.
