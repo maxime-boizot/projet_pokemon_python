@@ -17,18 +17,6 @@ class Pokemon(Entite):
     def set_atk(self, new_atk):
         self._ATK = new_atk
 
-    def get_def(self):
-        return self._DEF
-
-    def set_def(self, new_def):
-        self._DEF = new_def
-    
-    def get_name(self):
-        print(self._NOM)
-    
-    def set_name(self):
-        print(self._NOM)
-
 if __name__ == "__main__":
     Dracofoutre = Pokemon("Dracofoutre", 100, 10, 5, 10)
             
