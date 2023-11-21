@@ -11,6 +11,9 @@ class Pokemon(Entite):
     {self._DEF} DEF
     {self._VIT} VIT"""
 
+    def __repr__(self):
+        return self.__str__()
+
     def get_atk(self):
         return self._ATK
 
