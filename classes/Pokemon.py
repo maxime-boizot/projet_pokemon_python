@@ -15,6 +15,9 @@ class Pokemon:
     {self._ATK} ATK
     {self._DEF} DEF
     {self._VIT} VIT"""
+
+    def __repr__(self):
+        return self.__str__()
     
     def is_alive(self):
         return self._HP > 0
