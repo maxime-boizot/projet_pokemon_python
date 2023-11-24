@@ -1,4 +1,6 @@
-from classes import Dresseur, Equipe, Pokemon
+from classes.Dresseur import Dresseur
+from classes.Pokemon import Pokemon
+from classes.Equipe import Equipe
 from functions import prompting
 
 Red = Dresseur("Red", 300, 20, 10, 10, Equipe([Pokemon("Dracofoutre", 100, 10, 5, 10),Pokemon("Tiploufion", 100, 10, 5, 10)]))
