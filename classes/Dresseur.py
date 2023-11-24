@@ -1,4 +1,4 @@
-import Entite
+import Entite, Pokemon, Equipe
 
 class Dresseur(Entite):
     def __init__(self, name :str, maxhealth : int, strength : int, defense :int, speed : int, team):
