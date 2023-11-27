@@ -1,11 +1,11 @@
-import Entite
+from Entite import Entite
 from Equipe import Equipe
 from Pokemon import Pokemon
 
 class Dresseur(Entite):
     def __init__(self, name :str, maxhealth : int, strength : int, defense :int, speed : int, team : Equipe):
         super().__init__(name, maxhealth, strength, defense, speed)
-        self.EKIP = team
+        self._EKIP = team
   
     
     def __str__(self):
