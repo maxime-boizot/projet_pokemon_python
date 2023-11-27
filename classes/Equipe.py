@@ -1,4 +1,4 @@
-from Pokemon import Pokemon
+from classes.Pokemon import Pokemon
 
 class Equipe:
     def __init__(self, pokemons : list):
