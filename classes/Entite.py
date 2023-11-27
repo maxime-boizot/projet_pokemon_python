@@ -23,7 +23,7 @@ class Entite:
         if damage < 0:
             damage = 0
         target._HP -= damage
-        prompting(f"{self._NOM} Attaque ! Il a fait {damage} dégats")
+        prompting(f"\n{self._NOM} Attaque ! Il a fait {damage} dégats\n")
         
     def is_alive(self):
         return self._HP > 0
