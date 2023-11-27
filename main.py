@@ -4,9 +4,8 @@ from classes.Dresseur import Dresseur
 from classes.Equipe import Equipe
 from classes.Entite import Entite
 
-Team = Equipe([Pokemon("Dracofoutre", 100, 10, 5, 10),Pokemon("Tiploufion", 100, 10, 5, 10),Pokemon("Pikachu", 35, 12, 10, 25)])
 
-Red = Dresseur("Red", 300, 20, 10, 10, Team)
-Cynthia = Dresseur("Cynthia",300, 17, 8, 0, Equipe([("Dracofoutre", 60, 13, 2, 10),Pokemon("Pikachu", 65, 12, 7, 25)]))
+Red = Dresseur("Red", 300, 20, 10, 10, Equipe([Pokemon("Dracofeu", 100, 12, 5, 5),Pokemon("Spectrum", 60, 6, 3, 10), Pokemon("Pikachu", 35, 12, 10, 25), Pokemon("Pingoléon", 50, 8, 2, 10), Pokemon("Gardevoir", 50, 8, 2, 10)]))
+Cynthia = Dresseur("Cynthia",300, 17, 8, 0, Equipe([Pokemon("Bulbizarre", 110, 6, 3, 8),Pokemon("Tiplouf", 50, 8, 2, 10)]))
 
 combat(Red, Cynthia)
