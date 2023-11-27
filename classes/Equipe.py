@@ -29,7 +29,7 @@ if __name__ == "__main__":
 
     print('-----------------------------------------')
 
-    monekip.changepokemon(Pikachu)
+    monekip.changepokemon("Pikachu")
 
     print(monekip)
         
