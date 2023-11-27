@@ -1,7 +1,7 @@
-from classes.Dresseur import Dresseur
-from classes.Pokemon import Pokemon
-from classes.Equipe import Equipe
-from functions import prompting
+from __init__ import Pokemon
+from __init__ import Dresseur
+from __init__ import Equipe
+from __init__ import prompting
 
 Red = Dresseur("Red", 300, 20, 10, 10, Equipe([Pokemon("Dracofoutre", 100, 10, 5, 10),Pokemon("Tiploufion", 100, 10, 5, 10)]))
 Cynthia = Dresseur("Cynthia",300, 17, 8, 0, Equipe([Pokemon("Dracofeuj", 100, 10, 5, 10),Pokemon("Tiploufion", 100, 10, 5, 10)]))
