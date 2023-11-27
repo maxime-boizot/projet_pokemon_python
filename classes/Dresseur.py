@@ -12,8 +12,9 @@ class Dresseur(Entite):
         return  f"""{self._NOM} : 
     {self._HP}/{self._MAXHP} HP
     {self._ATK} ATK
-    {self._DEF} DEF
-    {self._EKIP} EQUIPE"""
+    {self._DEF} DEF\n
+    ---------------------------------------\n
+    {self._EKIP}"""
             
             
     
