@@ -1,3 +1,5 @@
+from functions.prompting import prompting
+
 class Entite:
     def __init__(self, name :str, maxhealth : int, strength : int, defense :int, speed : int):
         self._NOM = name
@@ -21,7 +23,7 @@ class Entite:
         if damage < 0:
             damage = 0
         target._HP -= damage
-        print(f"{self._name} Attaque ! Il a fait {damage} dégats")
+        prompting(f"{self._NOM} Attaque ! Il a fait {damage} dégats")
         
     def is_alive(self):
         return self._HP > 0
