@@ -11,13 +11,12 @@ class Equipe:
     def get_equipe(self):
         return self._POKEMONS
     
-    def changepokemon(self, pokemon_name):
-        for i, pokemon in enumerate(self._POKEMONS):
-            if pokemon._NOM == pokemon_name:
-                # Échange les positions du premier Pokémon avec le Pokémon trouvé
-                self._POKEMONS[0], self._POKEMONS[i] = self._POKEMONS[i], self._POKEMONS[0]
-                return
-        print(f"Le Pokémon {pokemon_name} n'est pas dans votre équipe.")
+    def changepokemon(self, index):
+        if 0 <= index < len(self._POKEMONS):
+            # Échange les positions du premier Pokémon avec le Pokémon à l'index spécifié
+            self._POKEMONS[0], self._POKEMONS[index] = self._POKEMONS[index], self._POKEMONS[0]
+        else:
+            print("Index invalide. Veuillez fournir un index valide.")
 
 
 if __name__ == "__main__":
@@ -29,7 +28,7 @@ if __name__ == "__main__":
 
     print('-----------------------------------------')
 
-    monekip.changepokemon("Pikachu")
+    monekip.changepokemon(2)
 
     print(monekip)
         

@@ -25,6 +25,6 @@ if __name__ == "__main__":
 
     print('°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°')
 
-    Cynthia._EKIP.changepokemon("Pikachu")
+    Cynthia._EKIP.changepokemon(2)
 
     print(Cynthia)
