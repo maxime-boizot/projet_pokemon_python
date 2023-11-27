@@ -12,13 +12,12 @@ class Equipe:
         return self._POKEMONS
     
     def changepokemon(self, pokemon_name):
-        for pokemon in self._POKEMONS:
+        for i, pokemon in enumerate(self._POKEMONS):
             if pokemon._NOM == pokemon_name:
-                # Swap le premier Pokémon avec le Pokémon trouvé
-                self._POKEMONS[0], pokemon = pokemon, self._POKEMONS[0]
+                # Échange les positions du premier Pokémon avec le Pokémon trouvé
+                self._POKEMONS[0], self._POKEMONS[i] = self._POKEMONS[i], self._POKEMONS[0]
                 return
         print(f"Le Pokémon {pokemon_name} n'est pas dans votre équipe.")
-
 
 
 if __name__ == "__main__":
