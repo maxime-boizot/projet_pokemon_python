@@ -22,3 +22,9 @@ if __name__ == "__main__":
     Team = Equipe([Pokemon("Dracofoutre", 100, 10, 5, 10),Pokemon("Tiploufion", 100, 10, 5, 10)])
     Cynthia = Dresseur("Cynthia",300, 17, 8, 0, Team)
     print(Cynthia)
+
+    print('-----------------------------------------')
+
+    Team.changepokemon(Pokemon("Tiploufion", 100, 10, 5, 10))
+
+    print(Cynthia)
