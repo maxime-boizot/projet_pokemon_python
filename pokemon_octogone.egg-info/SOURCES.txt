@@ -1,0 +1,16 @@
+README.md
+setup.py
+classes/Dresseur.py
+classes/Entite.py
+classes/Equipe.py
+classes/Pokemon.py
+classes/__init__.py
+functions/__init__.py
+functions/dice.py
+functions/prompting.py
+mecaniques/__init__.py
+mecaniques/combat.py
+pokemon_octogone.egg-info/PKG-INFO
+pokemon_octogone.egg-info/SOURCES.txt
+pokemon_octogone.egg-info/dependency_links.txt
+pokemon_octogone.egg-info/top_level.txt
