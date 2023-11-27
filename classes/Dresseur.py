@@ -19,7 +19,5 @@ class Dresseur(Entite):
             
     
 if __name__ == "__main__":
-    Cynthia = Dresseur("Cynthia",300, 17, 8, 0, team = Equipe([Pokemon("Dracofoutre", 100, 10, 5, 10),Pokemon("Tiploufion", 100, 10, 5, 10)]))
+    Cynthia = Dresseur("Cynthia",300, 17, 8, 0, Equipe([Pokemon("Dracofoutre", 100, 10, 5, 10),Pokemon("Tiploufion", 100, 10, 5, 10)]))
     print(Cynthia)
-        
-    pass
