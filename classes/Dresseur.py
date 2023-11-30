@@ -1,6 +1,10 @@
+<<<<<<< HEAD
 from classes.Entite import Entite
 from classes.Equipe import Equipe
 from classes.Pokemon import Pokemon
+=======
+import Entite, Pokemon, Equipe
+>>>>>>> text_assets
 
 class Dresseur(Entite):
     def __init__(self, name :str, maxhealth : int, strength : int, defense :int, speed : int, team : Equipe):
