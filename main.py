@@ -25,7 +25,7 @@ prompting(lore1)
 time.sleep(2)
 prompting(lore2)
 
-time.sleep(2)
+time.sleep(3)
 clear_screen()
 prompting(lore3)
 
