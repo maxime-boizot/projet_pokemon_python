@@ -5,6 +5,7 @@ from classes.Entite import Entite
 from functions.prompting import prompting
 from functions.prompting import clear_screen
 from lore.cynthiaLines import *
+from lore.interactionsLines import *
 import time
 
 def lastfight(dresseur1: Dresseur, dresseur2: Dresseur):
@@ -40,10 +41,11 @@ def lastfight(dresseur1: Dresseur, dresseur2: Dresseur):
             dresseur1._EKIP.changepokemon(next_pokemon)
             prompting(f"{dresseur1._NOM} a choisi {dresseur1._EKIP.get_equipe()[0]} !")
 
-    prompting("Cynthia entre sur le terrain ! \n")
+    prompting(cynthiaEntersFight)
     time.sleep(1)
     clear_screen()
     prompting(in_fight2)
+
     while dresseur2._HP > 0:
 
         action = int(input(f"""
@@ -74,6 +76,9 @@ def lastfight(dresseur1: Dresseur, dresseur2: Dresseur):
                 isPokemonDead()
             case 2:
                 SwapTeamMember()
+
     prompting(cynthiaDefeat)
     time.sleep(3)
     clear_screen()
+
+    prompting(afterfight)

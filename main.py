@@ -32,5 +32,8 @@ clear_screen()
 print("Cynthia :")
 prompting(startDial)
 
+time.sleep(1)
+clear_screen()
+
 combat(Red, Cynthia, 0)
 lastfight(Red, Cynthia)

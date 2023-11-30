@@ -37,7 +37,7 @@ def combat(dresseur1 : Dresseur, dresseur2 : Dresseur, cynthiapokemon):
                 match compteur:
                     case 3:
                         prompting(in_fight1)
-                    case 5:
+                    case 4:
                         prompting(cynthiaLastPkmn)
                 prompting(f"{dresseur2._NOM} a choisi {dresseur2._EKIP.get_equipe()[0]}")
             else:

@@ -6,4 +6,4 @@ lastpkmn = "Cynthia n'a plus le choix ! Elle va envoyer [nom_du_pkmn] ! Que voul
 
 pkmn_change = "Cynthia va envoyer [nom_du_pkmn] ! Que voulez vous faire ?"
 
-cynthiaEntersFight = "Cynthia est à court de pokémon... ELLE RENTRE SUR LE TERRAIN !"
+cynthiaEntersFight = "Cynthia est à court de pokémon... ELLE RENTRE SUR LE TERRAIN !\n"
