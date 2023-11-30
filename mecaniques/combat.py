@@ -8,9 +8,7 @@ import time
 
 def combat(dresseur1 : Dresseur, dresseur2 : Dresseur, cynthiapokemon):
 
-    PokemonActifRed = dresseur1._EKIP.get_equipe()[0]
     PokemonActifCynthia = dresseur2._EKIP.get_equipe()[0]
-
 
     def isPokemonDead():
         if dresseur1._EKIP.get_equipe()[0]._HP <= 0:
@@ -30,8 +28,6 @@ def combat(dresseur1 : Dresseur, dresseur2 : Dresseur, cynthiapokemon):
                 prompting(f"{dresseur2._NOM} a choisi {dresseur2._EKIP.get_equipe()[0]} !")
             else:
                 pass
-
-
 
     def SwapTeamMember():
         clear_screen()
@@ -55,8 +51,6 @@ def combat(dresseur1 : Dresseur, dresseur2 : Dresseur, cynthiapokemon):
             prompting("Ce pokemon ne peux pas se battre !")
 
 
-
-   
     while dresseur2._EKIP.lastStandMan():
 
             action = int(input(f"""
