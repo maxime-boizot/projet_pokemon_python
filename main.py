@@ -8,6 +8,7 @@ from classes.Equipe import Equipe
 from classes.Entite import Entite
 from lore.cynthiaLines import *
 from lore.lore import *
+from lore.interactionsLines import *
 import time
 
 
@@ -32,6 +33,10 @@ clear_screen()
 print("Cynthia :")
 prompting(startDial)
 
+time.sleep(1)
+clear_screen()
+
+prompting(initCombat)
 time.sleep(1)
 clear_screen()
 

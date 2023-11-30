@@ -1,4 +1,4 @@
-initCombat = "Cynthia vous défie en combat pour le titre de champion ! "
+initCombat = "Cynthia vous défie en combat pour le titre de champion !\n"
 
 firstpkmn = "Cynthia prépare son premier pokemon ! Qui voulez-vous envoyer au combat ?"
 
