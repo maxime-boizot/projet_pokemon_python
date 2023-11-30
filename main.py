@@ -22,7 +22,7 @@ clear_screen()
 
 time.sleep(1)
 prompting(lore1)
-time.sleep(2)
+time.sleep(1)
 prompting(lore2)
 
 time.sleep(3)
