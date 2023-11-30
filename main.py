@@ -28,7 +28,7 @@ time.sleep(2)
 clear_screen()
 prompting(lore3)
 
-time.sleep(1)
+time.sleep(2)
 clear_screen()
 print("Cynthia :")
 prompting(startDial)
