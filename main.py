@@ -19,9 +19,9 @@ print(pokemon_logo)
 time.sleep(3)
 clear_screen()
 
-time.sleep(0.5)
-prompting(lore1)
 time.sleep(1)
+prompting(lore1)
+time.sleep(2)
 prompting(lore2)
 
 time.sleep(2)
