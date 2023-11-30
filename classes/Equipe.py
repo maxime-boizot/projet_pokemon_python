@@ -11,6 +11,9 @@ class Equipe:
     def get_equipe(self):
         return self._POKEMONS
     
+    def lastStandMan(self):
+        return any(pokemon._HP > 0 for pokemon in self._POKEMONS)
+
     def changepokemon(self, index):
         if 0 <= index < len(self._POKEMONS):
             # Échange les positions du premier Pokémon avec le Pokémon à l'index spécifié
