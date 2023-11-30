@@ -22,8 +22,8 @@ lore1 = """Les membres du Conseil des Quatre, des maîtres de type redoutables,
 ont été défait un à un, prouvant la compétence grandissante du héros.\n"""
 
 lore2 = """\nDes mystères ont été résolus, des liens d'amitié tissés, et des forces obscures,
-comme la Team Galaxy, ont tenté de détourner le chemin du héros. Malgré les défis,
-le héros a émergé triomphant, prêt à affronter la Ligue Pokémon.
+comme la Team Galaxy, ont tenté de détourner le chemin du héros.
+Malgré les défis, le héros a émergé triomphant, prêt à affronter la Ligue Pokémon.\n
 Ainsi, devant les portes du Stade de la Ligue Pokémon, Red se tient,
 prêt à écrire le dernier chapitre de son incroyable aventure.\n"""
 
