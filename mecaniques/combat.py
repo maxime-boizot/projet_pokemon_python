@@ -3,14 +3,19 @@ from classes.Dresseur import Dresseur
 from classes.Equipe import Equipe
 from classes.Entite import Entite
 from functions.prompting import prompting
+from lore.cynthiaLines import *
 from functions.prompting import clear_screen
 import time
 
-def combat(dresseur1 : Dresseur, dresseur2 : Dresseur, cynthiapokemon):
 
+
+def combat(dresseur1 : Dresseur, dresseur2 : Dresseur, cynthiapokemon):
+    compteur = 0    
     PokemonActifCynthia = dresseur2._EKIP.get_equipe()[0]
 
     def isPokemonDead():
+        nonlocal PokemonActifCynthia
+        nonlocal compteur 
         if dresseur1._EKIP.get_equipe()[0]._HP <= 0:
             prompting(f"{dresseur1._EKIP.get_equipe()[0]._NOM} est KO !")
             time.sleep(1)
@@ -18,14 +23,23 @@ def combat(dresseur1 : Dresseur, dresseur2 : Dresseur, cynthiapokemon):
             print(dresseur1._EKIP.get_equipe()[0:5])
             next_pokemon = int(input("""Quel Pokémon souhaitez-vous choisir ?"""))
             dresseur1._EKIP.changepokemon(next_pokemon)
-            prompting(f"{dresseur1._NOM} a choisi {dresseur1._EKIP.get_equipe()[0]} !")
+            prompting(f"{dresseur1._NOM} a choisi {dresseur1._EKIP.get_equipe()[0]} ")
         elif dresseur2._EKIP.get_equipe()[0]._HP <= 0:
             prompting(f"{dresseur2._EKIP.get_equipe()[0]._NOM} est KO !")
             time.sleep(1)
             clear_screen()
             if dresseur2._EKIP.lastStandMan():
-                dresseur2._EKIP.changepokemon(cynthiapokemon + 1)
-                prompting(f"{dresseur2._NOM} a choisi {dresseur2._EKIP.get_equipe()[0]} !")
+                dresseur2._EKIP.get_equipe().pop(0)
+                dresseur2._EKIP.changepokemon(cynthiapokemon)
+
+                PokemonActifCynthia = dresseur2._EKIP.get_equipe()[0]
+                compteur += 1
+                match compteur:
+                    case 3:
+                        prompting(in_fight1)
+                    case 5:
+                        prompting(cynthiaLastPkmn)
+                prompting(f"{dresseur2._NOM} a choisi {dresseur2._EKIP.get_equipe()[0]}")
             else:
                 pass
 
@@ -82,3 +96,4 @@ def combat(dresseur1 : Dresseur, dresseur2 : Dresseur, cynthiapokemon):
                     isPokemonDead()
                 case 2:
                     SwapTeamMember()
+            
