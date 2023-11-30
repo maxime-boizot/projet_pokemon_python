@@ -23,8 +23,9 @@ ont été défait un à un, prouvant la compétence grandissante du héros.\n"""
 
 lore2 = """\nDes mystères ont été résolus, des liens d'amitié tissés, et des forces obscures,
 comme la Team Galaxy, ont tenté de détourner le chemin du héros. Malgré les défis,
-le héros a émergé triomphant, prêt à affronter la Ligue Pokémon. Ainsi, devant les portes du Stade de la Ligue Pokémon, 
-Red se tient, prêt à écrire le dernier chapitre de son incroyable aventure.\n"""
+le héros a émergé triomphant, prêt à affronter la Ligue Pokémon.
+Ainsi, devant les portes du Stade de la Ligue Pokémon, Red se tient,
+prêt à écrire le dernier chapitre de son incroyable aventure.\n"""
 
 lore3 = """\nRed se tient face à Cynthia, championne de la Ligue Pokémon.
 Leur regard mutuel révèle la tension préalable à l'affrontement ultime.
