@@ -2,7 +2,7 @@ startDial = """
 Merci pour Mt. Coronet. Et pour le Monde de la Distorsion.
 Je vous en suis vraiment reconnaissant. Ensemble, toi et tes Pokemons, vous avez surmonté tous les défis, aussi difficiles soient-ils.\n"""
 
-startDial2 = """\nCela signifie que vous avez aussi triomphé de vos faiblesses personnelles. Le pouvoir que tu as appris... Je peux le sentir émaner de toi.\n"""
+startDial2 = """\nCela signifie que vous avez aussi triomphé de vos faiblesses personnelles. Le pouvoir que tu as appris...\nJe peux le sentir émaner de toi.\n"""
 
 startDial3 = """\nMais c'est assez parlé. Commençons par la raison de ta présence ici. En tant que champion de la Ligue Pokémon, je relève ton défi !\n"""
 
