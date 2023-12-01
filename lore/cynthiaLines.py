@@ -10,7 +10,7 @@ in_fight1 ="Je ne laisserai pas ce match se terminer tout de suite ! Ce match es
 
 in_fight2 = "Je ne me rappelle pas la dernière fois que j'ai été dans une situation comme celle-ci. C'est vraiment excitant !\n"
 
-cynthiaLastPkmn = "J'espère que ce dernier pokémon va m'assurer la victoire... Je ne veux pas avoir recours à ma botte secrète\n"
+cynthiaLastPkmn = "J'espère que ce dernier pokémon va m'assurer la victoire. Je ne veux pas avoir recours à ma botte secrète...\n"
 
 cynthiaDefeat = "Je ne peux pas croire que j'ai perdu ! Mais quelle belle bataille !\n"
 
@@ -26,4 +26,4 @@ C'était excellent. Vraiment, une bataille exceptionnelle.
 Vous avez donné le soutien dont vos Pokémon avaient besoin pour maximiser leur puissance. 
 Et vous les avez guidés avec certitude pour assurer la victoire. Vous avez à la fois de la passion et de la fraîcheur calculatrice. 
 Ensemble, vous et votre Pokémon pouvez surmonter tous les défis qui se présentent à vous. 
-Ce sont les impressions que j'ai eues de notre combat. Je suis heureux d'avoir participé au couronnement du nouveau champion de Sinnoh !"""
+Ce sont les impressions que j'ai eues de notre combat.\nJe suis heureux d'avoir participé au couronnement du nouveau champion de Sinnoh !"""

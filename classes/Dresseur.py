@@ -15,16 +15,3 @@ class Dresseur(Entite):
     {self._DEF} DEF\n
     ---------------------------------------\n
     {self._EKIP}"""
-            
-            
-    
-if __name__ == "__main__":
-    Team = Equipe([Pokemon("Dracofoutre", 100, 10, 5, 10),Pokemon("Tiploufion", 100, 10, 5, 10),Pokemon("Pikachu", 35, 12, 10, 25)])
-    Cynthia = Dresseur("Cynthia",300, 17, 8, 0, Team)
-    print(Cynthia)
-
-    print('°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°')
-
-    Cynthia._EKIP.changepokemon(2)
-
-    print(Cynthia)

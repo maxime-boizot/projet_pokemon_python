@@ -31,7 +31,7 @@ prompting(lore3)
 
 time.sleep(2)
 clear_screen()
-prompting("Cynthia :")
+prompting("Cynthia :\n")
 prompting(startDial)
 time.sleep(1)
 prompting(startDial2)
@@ -44,6 +44,9 @@ clear_screen()
 prompting(initCombat)
 time.sleep(1)
 clear_screen()
+
+prompting("Cynthia a choisi Bulbizarre !\n")
+time.sleep(1)
 
 combat(Red, Cynthia, 0)
 lastfight(Red, Cynthia)

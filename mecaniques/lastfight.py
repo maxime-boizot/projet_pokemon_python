@@ -49,6 +49,7 @@ def lastfight(dresseur1: Dresseur, dresseur2: Dresseur):
     time.sleep(1)
     clear_screen()
     prompting(in_fight2)
+    time.sleep(1)
 
     while dresseur2._HP > 0:
 

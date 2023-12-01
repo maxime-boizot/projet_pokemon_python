@@ -17,7 +17,3 @@ class Pokemon(Entite):
 
     def set_atk(self, new_atk):
         self._ATK = new_atk
-
-if __name__ == "__main__":
-    Dracofoutre = Pokemon("Dracofoutre", 100, 10, 5, 10)
-    print(Dracofoutre)

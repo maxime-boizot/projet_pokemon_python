@@ -29,7 +29,7 @@ prêt à écrire le dernier chapitre de son incroyable aventure.\n"""
 
 lore3 = """\nRed se tient face à Cynthia, championne de la Ligue Pokémon.
 Leur regard mutuel révèle la tension préalable à l'affrontement ultime.
-Les Pokémon prêts à l'action, le Stade de la Ligue vibre d'excitation. 
+Les Pokémon prêts à l'action, le Stade de la Ligue vibre d'excitation.\n
 Dans ce moment chargé d'électricité, le destin des deux dresseurs
 s'écrira dans un combat qui transcendera les simples titres.\n"""
 
