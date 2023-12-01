@@ -31,7 +31,7 @@ prompting(lore3)
 
 time.sleep(2)
 clear_screen()
-print("Cynthia :")
+prompting("Cynthia :")
 prompting(startDial)
 time.sleep(1)
 prompting(startDial2)
