@@ -82,3 +82,5 @@ def lastfight(dresseur1: Dresseur, dresseur2: Dresseur):
     clear_screen()
 
     prompting(afterfight)
+    time.sleep(2)
+    clear_screen()
