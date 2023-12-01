@@ -4,11 +4,15 @@ from classes.Equipe import Equipe
 from classes.Entite import Entite
 from functions.prompting import prompting
 from functions.prompting import clear_screen
+from functions.dice import doubledice
 from lore.cynthiaLines import *
 from lore.interactionsLines import *
 import time
 
 def lastfight(dresseur1: Dresseur, dresseur2: Dresseur):
+    dice_stat = doubledice()
+    dresseur2._ATK += dice_stat[0]
+    dresseur2._DEF += dice_stat[1]
 
     def SwapTeamMember():
         clear_screen()
