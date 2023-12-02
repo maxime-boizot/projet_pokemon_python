@@ -5,6 +5,7 @@ from classes.Entite import Entite
 from functions.prompting import prompting
 from lore.cynthiaLines import *
 from functions.prompting import clear_screen
+from functions.dice import doubledice
 import time
 
 
@@ -12,6 +13,7 @@ import time
 def combat(dresseur1 : Dresseur, dresseur2 : Dresseur, cynthiapokemon):
     compteur = 0    
     PokemonActifCynthia = dresseur2._EKIP.get_equipe()[0]
+    default_ATK = dresseur1._EKIP.get_equipe()[0]._ATK
 
     def isPokemonDead():
         nonlocal PokemonActifCynthia
@@ -46,6 +48,7 @@ def combat(dresseur1 : Dresseur, dresseur2 : Dresseur, cynthiapokemon):
                 pass
 
     def SwapTeamMember():
+        nonlocal default_ATK 
         clear_screen()
         print(dresseur1._EKIP.get_equipe()[0:5])
         choix_pokemon = int(input("""Quel Pokémon souhaitez-vous choisir ?"""))
@@ -68,6 +71,11 @@ def combat(dresseur1 : Dresseur, dresseur2 : Dresseur, cynthiapokemon):
 
 
     while dresseur2._EKIP.lastStandMan():
+            pokemonActif = dresseur1._EKIP.get_equipe()[0]
+            default_ATK = dresseur1._EKIP.get_equipe()[0]._ATK
+            dice_stat = doubledice()
+            dresseur1._EKIP.get_equipe()[0]._ATK += dice_stat[0]
+            print(f"Cynthia lance les dés ! {pokemonActif._NOM} voit son ATK modifié de {dice_stat[0]} !\n")
 
             action = int(input(f"""
                                         

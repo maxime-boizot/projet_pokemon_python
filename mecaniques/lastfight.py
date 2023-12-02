@@ -10,9 +10,8 @@ from lore.interactionsLines import *
 import time
 
 def lastfight(dresseur1: Dresseur, dresseur2: Dresseur):
-    dice_stat = doubledice()
-    dresseur2._ATK += dice_stat[0]
-    dresseur2._DEF += dice_stat[1]
+    default_ATK = dresseur2._ATK
+    default_DEF = dresseur2._DEF 
 
     def SwapTeamMember():
         clear_screen()
@@ -52,6 +51,12 @@ def lastfight(dresseur1: Dresseur, dresseur2: Dresseur):
     time.sleep(1)
 
     while dresseur2._HP > 0:
+        dresseur2._ATK = default_ATK
+        dresseur2._DEF = default_DEF
+        dice_stat = doubledice()
+        dresseur2._ATK += dice_stat[0]
+        dresseur2._DEF += dice_stat[1]
+        print("Cynthia lance les dés ! son ATK augmente de", dice_stat[0], "et sa DEF augmente de", dice_stat[1], "!\n")
 
         action = int(input(f"""
                                         
