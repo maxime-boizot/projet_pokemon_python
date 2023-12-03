@@ -6,6 +6,7 @@ from functions.prompting import prompting
 from lore.cynthiaLines import *
 from functions.prompting import clear_screen
 from functions.dice import doubledice
+from functions.dice import dice
 import time
 
 
@@ -38,12 +39,18 @@ def combat(dresseur1 : Dresseur, dresseur2 : Dresseur, cynthiapokemon):
                 compteur += 1
                 match compteur:
                     case 3:
+                        prompting("Cynthia :\n")
                         prompting(in_fight1)
                         time.sleep(1)
+                        clear_screen()
                     case 4:
+                        prompting("Cynthia :\n")
                         prompting(cynthiaLastPkmn)
                         time.sleep(1)
+                        clear_screen()
                 prompting(f"{dresseur2._NOM} a choisi {dresseur2._EKIP.get_equipe()[0]}")
+                time.sleep(1)
+                clear_screen()
             else:
                 pass
 
@@ -73,10 +80,11 @@ def combat(dresseur1 : Dresseur, dresseur2 : Dresseur, cynthiapokemon):
     while dresseur2._EKIP.lastStandMan():
             pokemonActif = dresseur1._EKIP.get_equipe()[0]
             default_ATK = dresseur1._EKIP.get_equipe()[0]._ATK
-            dice_stat = doubledice()
-            dresseur1._EKIP.get_equipe()[0]._ATK += dice_stat[0]
-            print(f"Cynthia lance les dés ! {pokemonActif._NOM} voit son ATK modifié de {dice_stat[0]} !\n")
-
+            dice_stat = dice()
+            dresseur1._EKIP.get_equipe()[0]._ATK += dice_stat
+            prompting(f"Cynthia lance un dé ! {pokemonActif._NOM} voit son ATK modifiée de {dice_stat} !\n")
+            time.sleep(1)
+            clear_screen()
             action = int(input(f"""
                                         
                             ||{dresseur2._EKIP.get_equipe()[0]._NOM} : {dresseur2._EKIP.get_equipe()[0]._HP}/{dresseur2._EKIP.get_equipe()[0]._MAXHP} HP
@@ -104,6 +112,9 @@ def combat(dresseur1 : Dresseur, dresseur2 : Dresseur, cynthiapokemon):
                     time.sleep(0.5)
                     secondPokemon.attack(firstPokemon)
                     isPokemonDead()
+                    clear_screen()
                 case 2:
                     SwapTeamMember()
+                    time.sleep(0.5)
+                    clear_screen()
             

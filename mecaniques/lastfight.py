@@ -49,15 +49,16 @@ def lastfight(dresseur1: Dresseur, dresseur2: Dresseur):
     clear_screen()
     prompting(in_fight2)
     time.sleep(1)
-
+    clear_screen()
     while dresseur2._HP > 0:
         dresseur2._ATK = default_ATK
         dresseur2._DEF = default_DEF
         dice_stat = doubledice()
         dresseur2._ATK += dice_stat[0]
         dresseur2._DEF += dice_stat[1]
-        print("Cynthia lance les dés ! son ATK augmente de", dice_stat[0], "et sa DEF augmente de", dice_stat[1], "!\n")
-
+        prompting(f"Cynthia lance les dés ! son ATK est modifiée de , {dice_stat[0]}, et sa DEF est modifée de, {dice_stat[1]}, !\n")
+        time.sleep(1)
+        clear_screen()
         action = int(input(f"""
                                         
                             ||{dresseur2._NOM} : {dresseur2._HP}/{dresseur2._MAXHP} HP
@@ -84,13 +85,32 @@ def lastfight(dresseur1: Dresseur, dresseur2: Dresseur):
                 isPokemonDead()
                 secondStrike.attack(firstStrike)
                 isPokemonDead()
+                clear_screen()
             case 2:
                 SwapTeamMember()
-
+                time.sleep(0.5)
+                clear_screen()
+    prompting("Cythia est KO !")
+    time.sleep(1)
+    clear_screen()
+    prompting("Cynthia :\n")
+    time.sleep(0.2)
+    prompting("Cynthia :\n")
     prompting(cynthiaDefeat)
     time.sleep(3)
     clear_screen()
 
     prompting(afterfight)
     time.sleep(2)
+    clear_screen()
+
+    time.sleep(0.3)
+    prompting("""
+  ________  ________ 
+ /  _____/ /  _____/ 
+/   \  ___/   \  ___ 
+\    \_\  \    \_\   /
+ \______  /\______  /
+        \/        \/ """)
+    time.sleep(3)
     clear_screen()

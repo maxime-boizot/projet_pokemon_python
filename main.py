@@ -12,8 +12,8 @@ from lore.interactionsLines import *
 import time
 
 
-Red = Dresseur("Red", 300, 20, 10, 10, Equipe([Pokemon("Dracofeu", 100, 90, 5, 10),Pokemon("Spectrum", 60, 6, 3, 10), Pokemon("Pikachu", 35, 12, 10, 25), Pokemon("Pingoléon", 50, 8, 2, 10), Pokemon("Gardevoir", 50, 8, 2, 10)]))
-Cynthia = Dresseur("Cynthia",300, 17, 8, 0, Equipe([Pokemon("Bulbizarre", 10, 5, 3, 8),Pokemon("Tiplouf", 20, 8, 2, 10),Pokemon("Zarbi", 10, 5, 3, 8),Pokemon("Pichu", 10, 5, 3, 8),Pokemon("Metamorph", 10, 5, 3, 8),]))
+Red = Dresseur("Red", 300, 20, 10, 10, Equipe([Pokemon("Dracofeu", 111, 20, 5, 10),Pokemon("Spectrum", 77, 14, 7, 22), Pokemon("Pikachu", 66, 11, 11, 30), Pokemon("Pingoléon", 90, 16, 7, 17), Pokemon("Gardevoir", 77, 12, 2, 10)]))
+Cynthia = Dresseur("Cynthia",130, 15, 8, 0, Equipe([Pokemon("Torterra", 83, 12, 3, 8),Pokemon("Leviathor", 44, 10, 2, 10),Pokemon("Togekiss", 104, 9, 6, 8),Pokemon("Luxray", 68, 12, 4, 30),Pokemon("Lucario", 72, 11, 2, 8),]))
 
 clear_screen()
 print(pokemon_logo)
