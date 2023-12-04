@@ -45,7 +45,7 @@ prompting(initCombat)
 time.sleep(1)
 clear_screen()
 
-prompting("Cynthia a choisi Bulbizarre !\n")
+prompting("Cynthia a choisi Torterra !\n")
 time.sleep(1)
 
 combat(Red, Cynthia, 0)
