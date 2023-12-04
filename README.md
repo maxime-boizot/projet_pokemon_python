@@ -19,13 +19,12 @@ Pour installer et exécuter le projet Pokémon Battle, procédez comme suit :
 
 1. Clonez le dépôt sur votre ordinateur local.
 2. Accédez au répertoire du projet.
-3. Installez les dépendances requises en exécutant la commande suivante :
-    ```bash
-    pip install -r requirements.txt
+3. Si vous ne l'avez pa déja sur votre ordinateur installer python
+    ```url
+     https://www.python.org/downloads/.
     ```
 4. Exécutez le jeu en exécutant la commande suivante :
     ```bash
     python main.py
     ```
-
-Assurez-vous que Python et pip sont installés sur votre machine avant d’exécuter le jeu.
+Assurez-vous que Python est installé sur votre machine avant d’exécuter le jeu.
